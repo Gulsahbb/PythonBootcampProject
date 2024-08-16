@@ -17,7 +17,7 @@ pygame.display.set_caption('Büyücüler Dünyası') # Ekran başlığı ayarlan
 DARK_BLUE = (20, 33, 61)
 DARK_YELLOW = (252, 163, 17)
 GREY = (229, 229, 229)
-DARK_RED = (141, 8, 1)
+DARK_RED = (255,176,176)
 DARK_GREEN = (252,103,54)
 
 # Font
