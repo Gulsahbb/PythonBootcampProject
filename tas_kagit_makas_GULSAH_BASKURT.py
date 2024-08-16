@@ -18,7 +18,7 @@ DARK_BLUE = (20, 33, 61)
 DARK_YELLOW = (252, 163, 17)
 GREY = (229, 229, 229)
 DARK_RED = (141, 8, 1)
-DARK_GREEN = (1, 50, 32)
+DARK_GREEN = (252,103,54)
 
 # Font
 font = pygame.font.SysFont(None, 24) # Sistem fontunu kullanarak belirli bir font boyutu (24) ayarlamdı.
@@ -130,7 +130,7 @@ def tas_kagit_makas_GULSAH_BASKURT():
             draw_text(f'Kahraman: {oyuncu_secimi.capitalize()}\nKaranlık Lord: {bilgisayar_secimi.capitalize()}\nSkor: Kahraman {oyuncu_galibiyeti} - {bilgisayar_galibiyeti} Karanlık Lord\n', font, GREY, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
             draw_text(f'{mesaj}', font, DARK_YELLOW, screen, screen_width // 2, screen_height // 2 + 50, screen_width - 40)
             pygame.display.flip() # Ekrandaki değişiklikleri günceller.
-            pygame.time.wait(2000) # 2 saniye boyunca ekranı bu şekilde tutar.
+            pygame.time.wait(4000) # 2 saniye boyunca ekranı bu şekilde tutar.
 
         screen.fill(DARK_BLUE) # Ekran belirlenen renk ile doldurulur.
         # Eğer ki oyuncu galibiyeti 2 olursa oyuncu kazanır.Bilgisayarın galibiyeti 2 olursa bilgisayar kazanır.
@@ -141,9 +141,9 @@ def tas_kagit_makas_GULSAH_BASKURT():
         # Oyunu devam ettirmeyi isteyip istemeidğini sorar.
         draw_text("Tekrar oynamak ister misiniz? (e/h)", font, GREY, screen, screen_width // 2, screen_height // 2, screen_width - 40)
         pygame.display.flip()
-        pygame.time.wait(2000)
+        pygame.time.wait(3000)
         
-        # OYuncu devam etmek istiyorsa e, devam etmek istmeiyorsa h tuşuna basar.
+        # Oyuncu devam etmek istiyorsa e, devam etmek istmeiyorsa h tuşuna basar.
         devam_oyuncu = None
         while devam_oyuncu not in ['e', 'h']:
             for event in pygame.event.get():
@@ -164,7 +164,7 @@ def tas_kagit_makas_GULSAH_BASKURT():
         if devam_oyuncu == 'h':
             draw_text("Savaş sona erdi. Güle güle, kahraman!", font, GREY, screen, screen_width // 2, screen_height // 2 + 50, screen_width - 40)
             pygame.display.flip()
-            pygame.time.wait(2000)
+            pygame.time.wait(3000)
             break
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
