@@ -14,13 +14,11 @@ screen = pygame.display.set_mode((screen_width, screen_height)) # Pygame ekran p
 pygame.display.set_caption('Büyücüler Dünyası') # Ekran başlığı ayarlanıldı.
 
 # Renkler
-BLACK = (0, 0, 0)
 DARK_BLUE = (20, 33, 61)
 DARK_YELLOW = (252, 163, 17)
 GREY = (229, 229, 229)
-RED = (141, 8, 1)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+DARK_RED = (141, 8, 1)
+DARK_GREEN = (1, 50, 32)
 
 # Font
 font = pygame.font.SysFont(None, 24) # Sistem fontunu kullanarak belirli bir font boyutu (24) ayarlamdı.
@@ -137,11 +135,11 @@ def tas_kagit_makas_GULSAH_BASKURT():
         screen.fill(DARK_BLUE) # Ekran belirlenen renk ile doldurulur.
         # Eğer ki oyuncu galibiyeti 2 olursa oyuncu kazanır.Bilgisayarın galibiyeti 2 olursa bilgisayar kazanır.
         if oyuncu_galibiyeti == 2:
-            draw_text("Tebrikler! Kehaneti gerçekleştirdiniz ve karanlık lordu yendiniz!", font, GREEN, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
+            draw_text("Tebrikler! Kehaneti gerçekleştirdiniz ve karanlık lordu yendiniz!", font, DARK_GREEN, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
         else:
-            draw_text("Maalesef, karanlık lord sizi yendi.", font, RED, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
+            draw_text("Maalesef, karanlık lord sizi yendi.", font, DARK_RED, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
         # Oyunu devam ettirmeyi isteyip istemeidğini sorar.
-        draw_text("Tekrar oynamak ister misiniz? (e/h)", font, GREY, screen, screen_width // 2, screen_height // 2 + 50, screen_width - 40)
+        draw_text("Tekrar oynamak ister misiniz? (e/h)", font, GREY, screen, screen_width // 2, screen_height // 2, screen_width - 40)
         pygame.display.flip()
         pygame.time.wait(2000)
         
