@@ -161,12 +161,16 @@ def tas_kagit_makas_GULSAH_BASKURT():
 
         # Oyuncu h'ye bastığında ekranda belirlenen mesaj gösterilir. 2saniye bekledikten sonra program sona erer.
         screen.fill(DARK_BLUE)
-        if devam_oyuncu == 'h':
-            draw_text("Savaş sona erdi. Güle güle, kahraman!", font, GREY, screen, screen_width // 2, screen_height // 2 + 50, screen_width - 40)
+        devam_bilgisayar = random.choice(['e','h'])
+
+        if devam_oyuncu == 'e' and devam_bilgisayar == 'e':
+            draw_text("Her iki taraf da oyuna devam etmek istiyor. Yeni oyun başlıyor...", font, GREY, screen, screen_width // 2, screen_height // 2, screen_width - 40)
+            continue
+        else:
+            draw_text("Karanlık Lord oynamak istemiyor. Savaş sona erdi. Güle güle, kahraman!", font, GREY, screen, screen_width // 2, screen_height // 2, screen_width - 40)
             pygame.display.flip()
             pygame.time.wait(3000)
             break
-
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
 if __name__ == "__main__":
     tas_kagit_makas_GULSAH_BASKURT()
