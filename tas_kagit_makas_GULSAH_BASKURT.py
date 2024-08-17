@@ -42,4 +42,23 @@ def tas_kagit_makas_GULSAH_BASKURT():
             elif oyuncu_secimi not in secenekler:
                 print('Geçersiz bir seçim yaptınız. Program kapanıyor...')
                 return
+
+            bilgisayar_secimi = random.choice(secenekler).lower()
+            print(f'\n• Oyuncu Seçimi : {oyuncu_secimi}')
+            print(f'• Bilgisayar Seçimi : {bilgisayar_secimi}\n')
+
+            if oyuncu_secimi == bilgisayar_secimi:
+                print(f'Bu Tur Berabere! - {random.choice(beraberlik_mesaji)}\n')
+            elif ((oyuncu_secimi == 'taş' and bilgisayar_secimi == 'makas') or
+                  (oyuncu_secimi == 'makas' and bilgisayar_secimi == 'kağıt') or 
+                  (oyuncu_secimi == 'kağıt' and bilgisayar_secimi == 'taş')):
+                    oyuncu_galibiyeti += 1
+                    print(f'Bu Turu Sen Kazandın!! - {random.choice(oyuncu_galibiyet_mesaji)}\n')
+            else:
+                bilgisayar_galibiyeti += 1
+                print(f'Bu Turu Bilgisayar Kazandı!! - {random.choice(bilgisayar_galibiyet_mesaji)}\n')
+    
+            print(f'############# Oyuncu {oyuncu_galibiyeti} - {bilgisayar_galibiyeti} Bilgisayar ############\n')
+
+
 tas_kagit_makas_GULSAH_BASKURT()
