@@ -24,7 +24,10 @@ def tas_kagit_makas_GULSAH_BASKURT():
     oyuncu_galibiyet_mesaji = ['Harikasın!!','Böyle Devam','Muhteşem!!']
     bilgisayar_galibiyet_mesaji = ['Hah! Ben Kazandım','Odaklan Dostum','Yaşasın!!']
     beraberlik_mesaji = ['Şanslısın','Tüh!!','Seni alt edeceğim...']
-    
-    print(mesaj)
 
+    while True:
+        print(mesaj)
+        oyuncu_galibiyeti = 0
+        bilgisayar_galibiyeti = 0
+        tur_sayisi = 0
 tas_kagit_makas_GULSAH_BASKURT()
