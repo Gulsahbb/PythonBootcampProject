@@ -30,4 +30,16 @@ def tas_kagit_makas_GULSAH_BASKURT():
         oyuncu_galibiyeti = 0
         bilgisayar_galibiyeti = 0
         tur_sayisi = 0
+
+        while oyuncu_galibiyeti < 2 and bilgisayar_galibiyeti < 2:
+            tur_sayisi += 1
+            print(f'################### {tur_sayisi}.TUR ########################\n')
+            oyuncu_secimi = input('Taş, Kağıt, Makas veya çıkmak için exit.\nLütfen birini seçiniz : ').lower()
+
+            if oyuncu_secimi == 'exit':
+                print('Oyundan Ayrılıyorsunuz. Görüşmek Üzere...')
+                return
+            elif oyuncu_secimi not in secenekler:
+                print('Geçersiz bir seçim yaptınız. Program kapanıyor...')
+                return
 tas_kagit_makas_GULSAH_BASKURT()
