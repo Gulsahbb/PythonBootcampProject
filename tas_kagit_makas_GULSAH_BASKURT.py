@@ -4,7 +4,7 @@ import random
 def tas_kagit_makas_GULSAH_BASKURT():
 
     mesaj = """
-            
+
     ############# TAŞ KAĞIT MAKAS OYUNU #############
 
     1 - Taş, makası yener.
