@@ -65,5 +65,8 @@ def tas_kagit_makas_GULSAH_BASKURT():
         else:
             print('OYUNU KAZANAN : Bilgisayar')
 
+        devam_bilgisayar = random.choice(['e','h'])
+        devam_oyuncu = input('Oyuna Devam Etmek İstiyor Musun? (e/h) : ')
+
 
 tas_kagit_makas_GULSAH_BASKURT()
