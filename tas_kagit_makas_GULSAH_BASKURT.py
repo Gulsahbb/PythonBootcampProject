@@ -1,7 +1,6 @@
 # Rastgele seçimler yapmak için kullanıldı.
 import random
 
-
 def tas_kagit_makas_GULSAH_BASKURT():
 
     mesaj = """
@@ -68,5 +67,14 @@ def tas_kagit_makas_GULSAH_BASKURT():
         devam_bilgisayar = random.choice(['e','h'])
         devam_oyuncu = input('Oyuna Devam Etmek İstiyor Musun? (e/h) : ')
 
+        if devam_oyuncu == 'e' and devam_bilgisayar == 'e':
+            print('İki tarafta oynamaya devam etmek istiyor. Oyun Başlıyor...')
+            continue
+        elif devam_oyuncu == 'h' and devam_bilgisayar == 'e':
+            print('Oyundan çıkmak istiyorsunuz. Görüşmek Üzere...')
+            break
+        else:
+            print('Bilgisayar Oyuna Devam Etmek İstemiyor. Görüşmek Üzere...')
+            break
 
 tas_kagit_makas_GULSAH_BASKURT()
