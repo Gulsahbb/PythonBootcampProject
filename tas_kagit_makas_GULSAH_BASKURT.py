@@ -59,6 +59,11 @@ def tas_kagit_makas_GULSAH_BASKURT():
                 print(f'Bu Turu Bilgisayar Kazandı!! - {random.choice(bilgisayar_galibiyet_mesaji)}\n')
     
             print(f'############# Oyuncu {oyuncu_galibiyeti} - {bilgisayar_galibiyeti} Bilgisayar ############\n')
+        
+        if oyuncu_galibiyeti == 2:
+            print('OYUNU KAZANAN : Oyuncu')
+        else:
+            print('OYUNU KAZANAN : Bilgisayar')
 
 
 tas_kagit_makas_GULSAH_BASKURT()
