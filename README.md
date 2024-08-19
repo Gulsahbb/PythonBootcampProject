@@ -18,7 +18,7 @@ Bu proje, klasik "Taş Kağıt Makas" oyununu Python programlama dili kullanarak
 Bu projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
 ### 1.Python Yüklü Olmalı:
-* Bu oyun Python 3.x sürümü ile uyumludur. Henüz Python yüklü değilse, Python'un resmi web sitesinden Python'u indirip kurabilirsiniz.
+* Bu oyun Python 3.x sürümü ile uyumludur. Henüz Python yüklü değilse, [Python'un resmi web sitesinden](https://www.python.org/downloads/) Python'u indirip kurabilirsiniz.
 
 ### 2.Oyunu Çalıştırma:
 * Proje dosyasını bilgisayarınıza indirin.
