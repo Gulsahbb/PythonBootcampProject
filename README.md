@@ -24,7 +24,11 @@ Bu projeyi çalıştırmak için aşağıdaki adımları izleyin:
 * Proje dosyasını bilgisayarınıza indirin.
 * Terminal veya komut istemcisini açın.
 * Dosyanın bulunduğu dizine gidin ve tas_kagit_makas_GULSAH_BASKURT.py dosyasını çalıştırmak için aşağıdaki komutu girin:
-  python tas_kagit_makas_GULSAH_BASKURT.py
+  ```shell
+
+python tas_kagit_makas_GULSAH_BASKURT.py
+
+```
 
 ## Kullanım
 Oyun başlatıldığında ekrana oyunun kuralları ve yönergeleri gelir. Oyuncu, taş, kağıt veya makas seçeneklerinden birini yazarak seçim yapar. Oyun, oyuncu veya bilgisayarın ilk iki turu kazanmasıyla sona erer. Oyun sonrasında devam etmek isteyip istemediğinizi soran bir mesaj alırsınız. Eğer devam etmek istemezseniz h, etmek isterseniz e yazarak cevap verebilirsiniz.
