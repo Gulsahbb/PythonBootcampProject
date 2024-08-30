@@ -73,3 +73,22 @@ Oyundan çıkmak istiyorsanız 'exit' yazın.
             print('OYUNU KAZANAN : Bilgisayar')
 
 
+        # Oyuna devam etmek isteyip istemediğini sor
+        devam_bilgisayar = random.choice(['e','h'])  # Bilgisayarın devam etme isteğini rastgele belirle
+        devam_oyuncu = input('Oyuna Devam Etmek İstiyor Musun? (e/h) : ')
+
+        if devam_oyuncu == 'e' and devam_bilgisayar == 'e':
+            # Hem oyuncu hem de bilgisayar oynamaya devam etmek istiyorsa
+            print('İki tarafta oynamaya devam etmek istiyor. Oyun Başlıyor...')
+            continue
+        elif devam_oyuncu == 'h' and devam_bilgisayar == 'e':
+            # Oyuncu oynamak istemiyor ancak bilgisayar devam etmek istiyor
+            print('Oyundan çıkmak istiyorsunuz. Görüşmek Üzere...')
+            break
+        else:
+            # Bilgisayar oynamak istemiyor
+            print('Bilgisayar Oyuna Devam Etmek İstemiyor. Görüşmek Üzere...')
+            break
+
+# Fonksiyonu çağırarak oyunu başlat
+tas_kagit_makas_GULSAH_BASKURT()
