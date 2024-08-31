@@ -167,7 +167,15 @@ def tas_kagit_makas_GULSAH_BASKURT():
         screen.fill(DARK_BLUE)
         devam_bilgisayar = random.choice(['e','h'])
 
-        
+        if devam_oyuncu == 'e' and devam_bilgisayar == 'e':
+            draw_text('Her iki taraf da kozmosu keşfetmeye devam etmek istiyor. Yeni bir galaktik meydan okuma başlıyor...', font, GREY, screen, screen_width // 2, screen_height // 2, screen_width - 40)
+            continue
+        else:
+            draw_text('Kozmik Rakip savaşa devam etmek istemiyor. Savaş sona erdi. Güle güle, Kozmik Savaşçı! Evren yolunu gözlüyor.', font, GREY, screen, screen_width // 2, screen_height // 2, screen_width - 40)
+            pygame.display.flip()
+            pygame.time.wait(3000)
+            break
+
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
 if __name__ == '__main__':
