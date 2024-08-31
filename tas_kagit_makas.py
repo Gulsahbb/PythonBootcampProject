@@ -62,3 +62,11 @@ def show_intro():
     pygame.display.flip() # Ekrandaki değişiklikleri günceller.
     pygame.time.wait(5000)  # 5 saniye boyunca metni gösterir.
 
+# Oyun Akışı
+def tas_kagit_makas_GULSAH_BASKURT():
+   pass
+
+
+# Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
+if __name__ == '__main__':
+    tas_kagit_makas_GULSAH_BASKURT()
