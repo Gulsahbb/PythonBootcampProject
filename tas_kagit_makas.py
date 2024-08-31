@@ -129,7 +129,14 @@ def tas_kagit_makas_GULSAH_BASKURT():
                 bilgisayar_galibiyeti += 1
 
             
-            
+            screen.fill(DARK_BLUE) # Ekran belirlenen renk ile doldurulur.
+            # Oyuncu seçimi, bilgisayar seçimi, skor ve galibiyet mesajları ekrana çizilir.
+            draw_text(f'Kozmik Savaşçı: {oyuncu_secimi.capitalize()}\nKozmik Rakip: {bilgisayar_secimi.capitalize()}\nSkor: Kozmik Savaşçı {oyuncu_galibiyeti} - {bilgisayar_galibiyeti} Kozmik Rakip\n', font, GREY, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
+            draw_text(f'{mesaj}', font, DARK_YELLOW, screen, screen_width // 2, screen_height // 2 + 50, screen_width - 40)
+            pygame.display.flip() # Ekrandaki değişiklikleri günceller.
+            pygame.time.wait(4000) # 2 saniye boyunca ekranı bu şekilde tutar.
+
+        
 
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
