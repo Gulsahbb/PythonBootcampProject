@@ -136,6 +136,17 @@ def tas_kagit_makas_GULSAH_BASKURT():
             pygame.display.flip() # Ekrandaki değişiklikleri günceller.
             pygame.time.wait(4000) # 2 saniye boyunca ekranı bu şekilde tutar.
 
+        screen.fill(DARK_BLUE) # Ekran belirlenen renk ile doldurulur.
+        # Eğer ki oyuncu galibiyeti 2 olursa oyuncu kazanır.Bilgisayarın galibiyeti 2 olursa bilgisayar kazanır.
+        if oyuncu_galibiyeti == 2:
+            draw_text('Tebrikler! Kozmik Rakibi yendiniz! Galaksi sizinle!', font, DARK_GREEN, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
+        else:
+            draw_text('Maalesef, Kozmik Rakip sizi yendi. Gücünüzün daha da artması için evrene geri dönün.', font, DARK_RED, screen, screen_width // 2, screen_height // 2 - 50, screen_width - 40)
+        # Oyunu devam ettirmeyi isteyip istemeidğini sorar.
+        draw_text('Galaktik meydan okumayı sürdürmek ister misiniz? (e/h)', font, GREY, screen, screen_width // 2, screen_height // 2, screen_width - 40)
+        pygame.display.flip()
+        pygame.time.wait(3000)
+        
         
 
 
