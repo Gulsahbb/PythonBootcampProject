@@ -79,7 +79,17 @@ def tas_kagit_makas_GULSAH_BASKURT():
         oyuncu_galibiyeti = 0
         bilgisayar_galibiyeti = 0
         tur_sayisi = 0
-    
+    # Oyuncu ve bilgisayar 2 galibiyet alana kadar oyun devam eder. İlk 2 galibiyet alan oyunu kazanır.
+        while oyuncu_galibiyeti < 2 and bilgisayar_galibiyeti < 2:
+            screen.fill(DARK_BLUE) # Ekran belirlenen renk ile dolduruldu.
+            # Oyuncuya seçim yapması için verilen metni ekrana çizer.
+            tur_sayisi += 1
+            draw_text(f'{tur_sayisi}.TUR', font, GREY, screen, screen_width // 2, screen_height // 2 - 110, screen_width - 40)
+            draw_text('Gezegen güçlerinizi seçin:\n1: Taş Astroidi\n2: Kağıt Yıldızı\n3: Makas Meteor', font, GREY, screen, screen_width // 2, screen_height // 2 - 80, screen_width - 40)
+            # Ekrandaki değişiklikleri günceller.
+            pygame.display.flip()
+
+            
 
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
