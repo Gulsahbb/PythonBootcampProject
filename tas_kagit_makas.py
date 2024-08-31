@@ -89,6 +89,28 @@ def tas_kagit_makas_GULSAH_BASKURT():
             # Ekrandaki değişiklikleri günceller.
             pygame.display.flip()
 
+            # Oyuncunun yapacağı seçim ilk başta none olarak ayarlanır.
+            oyuncu_secimi = None
+            while oyuncu_secimi not in seçenekler: # Oyuncu geçerli bir seçenek seçene kadar döngü çalışmaya devam eder.
+                # Pygameden gelen olayları dinler.
+                for event in pygame.event.get():
+                    # Oyun kapatılmak istenirse oyun kapatılır.
+                    if event.type == pygame.QUIT:
+                        pygame.quit()
+                        sys.exit()
+                    # q'ya basarsa oyun kapanır.
+                    if event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_q:
+                            pygame.quit()
+                            sys.exit()
+                        # taş, kağıt, makastan herhangi birini yazarsa oyuncu_seciminie o değer atanır.
+                        if event.key == pygame.K_1:
+                            oyuncu_secimi = 'taş'
+                        elif event.key == pygame.K_2:
+                            oyuncu_secimi = 'kağıt'
+                        elif event.key == pygame.K_3:
+                            oyuncu_secimi = 'makas'
+
             
 
 
