@@ -64,7 +64,14 @@ def show_intro():
 
 # Oyun Akışı
 def tas_kagit_makas_GULSAH_BASKURT():
-   pass
+    # Oyuncu ve Bilgisayarın seçebileceği seçenekler bir liste halinde tutuluyor.
+    seçenekler = ['taş', 'kağıt', 'makas']
+    # Her sonuç durumu için farklı mesajlar liste halinde tutuluyor.
+    bilgisayar_galibiyet_mesaji = ['Kozmik Rakip galip geldi! Yıldızlar bu sefer onun tarafında.', 'Güçlü değilsin... Evren bu mücadelede üstün geldi.']
+    oyuncu_galibiyet_mesaji = ['Galaksi şampiyonu sensin!', 'Harikasın!']
+    beraberlik_mesaji = ['Bu sadece bir denge! Kozmik güçler eşit dağıldı.', 'Birbirine denk güçler! Evrenin dengesini korudunuz.']
+
+    
 
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
