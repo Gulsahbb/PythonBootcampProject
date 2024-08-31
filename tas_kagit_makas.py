@@ -73,7 +73,13 @@ def tas_kagit_makas_GULSAH_BASKURT():
 
     show_intro()  # Tanıtım metnini gösterir.
 
-   
+    # Oyun bitene kadar bu döngü devam eder.
+    while True:
+        # Her yeni galibiyette bu sayılar sıfırlanır.
+        oyuncu_galibiyeti = 0
+        bilgisayar_galibiyeti = 0
+        tur_sayisi = 0
+    
 
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
