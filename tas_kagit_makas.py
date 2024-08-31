@@ -147,6 +147,22 @@ def tas_kagit_makas_GULSAH_BASKURT():
         pygame.display.flip()
         pygame.time.wait(3000)
         
+        # Oyuncu devam etmek istiyorsa e, devam etmek istmeiyorsa h tuşuna basar.
+        devam_oyuncu = None
+        while devam_oyuncu not in ['e', 'h']:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_q:
+                        pygame.quit()
+                        sys.exit()
+                    if event.key == pygame.K_e:
+                        devam_oyuncu = 'e'
+                    elif event.key == pygame.K_h:
+                        devam_oyuncu = 'h'
+
         
 
 
