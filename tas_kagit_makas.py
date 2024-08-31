@@ -111,6 +111,24 @@ def tas_kagit_makas_GULSAH_BASKURT():
                         elif event.key == pygame.K_3:
                             oyuncu_secimi = 'makas'
 
+            bilgisayar_secimi = random.choice(seçenekler) # Bİlgisayardan rastgele bir seçim bilgisayar_secim'e atanır.
+            mesaj = '' # verilecek mesaj başta boş olarak belirlenir.
+
+            # eğer ki oyuncu ve bilgisayart seçimleri aynıysa beraberlik olur ve kimse sayı kazanmaz. Beraberlik mesajı ekrana çizilir.
+            if oyuncu_secimi == bilgisayar_secimi: 
+                mesaj = random.choice(beraberlik_mesaji)
+            # Eğer ki oyuncu seçiminin bilgisayar seçimini yendiği koşullarda oyuncuya bir sayı yazılır ve ekrana oyuncu galibiyet mesajı çizilir.
+            elif (oyuncu_secimi == 'taş' and bilgisayar_secimi == 'makas') or \
+                 (oyuncu_secimi == 'makas' and bilgisayar_secimi == 'kağıt') or \
+                 (oyuncu_secimi == 'kağıt' and bilgisayar_secimi == 'taş'):
+                mesaj = random.choice(oyuncu_galibiyet_mesaji)
+                oyuncu_galibiyeti += 1
+            # Eğer ki bilgisayar seçiminin oyuncu seçimini yendiği koşullarda ise bilgisayara bir sayı yazılır ve ekrana bilgisayar galibiyet mesajı çizdirilir.
+            else:
+                mesaj = random.choice(bilgisayar_galibiyet_mesaji)
+                bilgisayar_galibiyeti += 1
+
+            
             
 
 
