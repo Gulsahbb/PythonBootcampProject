@@ -71,7 +71,9 @@ def tas_kagit_makas_GULSAH_BASKURT():
     oyuncu_galibiyet_mesaji = ['Galaksi şampiyonu sensin!', 'Harikasın!']
     beraberlik_mesaji = ['Bu sadece bir denge! Kozmik güçler eşit dağıldı.', 'Birbirine denk güçler! Evrenin dengesini korudunuz.']
 
-    
+    show_intro()  # Tanıtım metnini gösterir.
+
+   
 
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
