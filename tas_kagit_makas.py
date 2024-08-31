@@ -43,3 +43,22 @@ def draw_text(text, font, color, surface, x, y, max_width):
                 current_line = test_line
         surface.blit(font.render(current_line, True, color), (x - textrect.width // 2, y_offset))
         y_offset += (font.get_height())*2 + 5  # Satır yüksekliği ve biraz boşluk ekle
+
+
+# Oyun başlangıcındaki metni gösterir.
+def show_intro():
+    # Tanıtım metni
+    screen.fill(DARK_BLUE)
+    draw_text('•••Taş, Kağıt, Makas Galaksisine Hoş Geldiniz!•••\n',font, DARK_YELLOW, screen, screen_width // 2, screen_height // 2 - 170, screen_width - 40)
+    draw_text('Uzayın derinliklerinde, destansı bir düello sizi bekliyor! Taşlar, Kağıtlar ve Makaslar, bu evrende sonsuz bir rekabet içinde.\n',font, GREY, screen, screen_width // 2, screen_height // 2 - 120, screen_width - 40)
+    draw_text('Göreviniz rakibinizi galaktik zeka ile alt edin. İlk iki turda zafere ulaşan, galaksinin yeni Kozmik Savaşçıı olacak!\n',font, GREY, screen, screen_width // 2, screen_height // 2 - 90, screen_width - 40)
+    draw_text('Evrensel Kurallar:\n',font, DARK_YELLOW, screen, screen_width // 2, screen_height // 2 - 40, screen_width - 40)
+    draw_text('   • Taş, Makas gezegenini paramparça eder.\n',font, GREY, screen, screen_width // 2, screen_height // 2 - 10, screen_width - 40)
+    draw_text('   • Makas, Kağıt yıldızını ikiye böler.\n',font, GREY, screen, screen_width // 2, screen_height // 2 + 20, screen_width - 40)
+    draw_text('   • Kağıt, Taş asteroidini sarar ve etkisiz hale getirir.\n',font, GREY, screen, screen_width // 2, screen_height // 2 + 50 , screen_width - 40)
+    draw_text('Oyunun sonuna kadar galaktik becerilerinizi gösterin veya (q) basarak evinize geri dönün.\n',font, GREY, screen, screen_width // 2, screen_height // 2 + 100, screen_width - 40)
+    draw_text('Yıldızlar sizinle olsun! Hazırsanız, epik savaş başlasın!',font, GREY, screen, screen_width // 2, screen_height // 2 + 130, screen_width - 40)
+    draw_text('BAŞLIYOR...',font,DARK_YELLOW,screen,screen_width // 2,screen_height// 2 + 170,screen_width - 40)
+    pygame.display.flip() # Ekrandaki değişiklikleri günceller.
+    pygame.time.wait(5000)  # 5 saniye boyunca metni gösterir.
+
