@@ -163,8 +163,11 @@ def tas_kagit_makas_GULSAH_BASKURT():
                     elif event.key == pygame.K_h:
                         devam_oyuncu = 'h'
 
-        
+        # Oyuncu h'ye bastığında ekranda belirlenen mesaj gösterilir. 2saniye bekledikten sonra program sona erer.
+        screen.fill(DARK_BLUE)
+        devam_bilgisayar = random.choice(['e','h'])
 
+        
 
 # Dosya direkt olarak çalıştırıldıysa tas_kagit_makas_GULSAH_BASKURT() fonksiyonunun çağrılmasını sağlar.
 if __name__ == '__main__':
