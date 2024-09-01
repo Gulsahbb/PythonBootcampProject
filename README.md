@@ -32,7 +32,7 @@ Bu projeyi çalıştırmak için aşağıdaki adımları izleyin:
 Oyun başlatıldığında ekrana oyunun kuralları ve yönergeleri gelir. Oyuncu, taş, kağıt veya makas seçeneklerinden birini yazarak seçim yapar. Oyun, oyuncu veya bilgisayarın ilk iki turu kazanmasıyla sona erer. Oyun sonrasında devam etmek isteyip istemediğinizi soran bir mesaj alırsınız. Eğer devam etmek istemezseniz h, etmek isterseniz e yazarak cevap verebilirsiniz.
 
 ## Projenin Özellikleri
-* Kullanıcı Girdisi: Oyuncu, taş, kağıt veya makas seçimini klavye aracılığıyla yapar.
+* **Kullanıcı Girdisi:** Oyuncu, taş, kağıt veya makas seçimini klavye aracılığıyla yapar.
 * Rastgele Seçim: Bilgisayarın seçimi random modülü kullanılarak rastgele belirlenir.
 * Tur Sayısı: Oyuncu ve bilgisayar arasındaki turlar takip edilir ve skorlar ekranda gösterilir.
 * Galibiyet Mesajları: Her turdan sonra kazanan tarafa özel bir mesaj gösterilir.
