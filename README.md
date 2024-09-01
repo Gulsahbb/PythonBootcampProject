@@ -35,7 +35,7 @@ Oyun başlatıldığında ekrana oyunun kuralları ve yönergeleri gelir. Oyuncu
 * **Kullanıcı Girdisi:** Oyuncu, taş, kağıt veya makas seçimini klavye aracılığıyla yapar.
 * **Rastgele Seçim:** Bilgisayarın seçimi random modülü kullanılarak rastgele belirlenir.
 * **Tur Sayısı:** Oyuncu ve bilgisayar arasındaki turlar takip edilir ve skorlar ekranda gösterilir.
-* Galibiyet Mesajları: Her turdan sonra kazanan tarafa özel bir mesaj gösterilir.
+* **Galibiyet Mesajları:** Her turdan sonra kazanan tarafa özel bir mesaj gösterilir.
 
 ## Gereksinimler
 Bu projede herhangi bir harici kütüphane kullanılmamaktadır. Python'un standart kütüphanelerini kullanarak oyun geliştirilmiştir.
